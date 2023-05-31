@@ -1,0 +1,50 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  .grid-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .grid-item img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  /* ------------------------------ */
+  .epc-section {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: left;
+    margin: 20px auto;
+    max-width: 600px;
+  }
+
+  .epc-section h3 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .epc-section p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .epc-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .epc-section li {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
