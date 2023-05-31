@@ -1,0 +1,47 @@
+.floating-menu {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
+ .floating-menu a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+ }
+
+ .floating-menu a:hover {
+    background-color: #128C7E;
+ }
+
+ .twitter {
+    background-color: #1DA1F2; /* WhatsApp green */
+ }
+
+ .facebook {
+    background-color: #3B5998; /* Facebook blue */
+ }
+
+ .instagram {
+    background-color: #E1306C; /* Instagram pink */
+ }
+
+ .linkedin {
+   background-color: #0077B5; /* Instagram pink */
+}
+
+ .floating-menu .fab {
+    font-size: 1.5rem;
+ }
