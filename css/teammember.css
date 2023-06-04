@@ -1,0 +1,16 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    grid-gap: 20px; /* Adjust the gap between grid items */
+  }
+  
+  .grid-item {
+    text-align: center;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    max-width: 200px; /* Adjust the maximum image width */
+    height: auto;
+  }
+  

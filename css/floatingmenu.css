@@ -1,12 +1,14 @@
 .floating-menu {
     position: fixed;
     top: 50%;
-    right: 20px;
+    left: 20px;
     transform: translateY(-50%);
     z-index: 999;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center;
+     */
+   justify-content: unset;
  }
 
  .floating-menu a{
@@ -40,6 +42,10 @@
 
  .linkedin {
    background-color: #0077B5; /* Instagram pink */
+}
+
+.whatsapp {
+   background-color: #25D366; /* Instagram pink */
 }
 
  .floating-menu .fab {
