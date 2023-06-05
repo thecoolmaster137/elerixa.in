@@ -1,4 +1,18 @@
-.linkhover{
-    /* border: 2px solid red; */
+/* .linkhover{
+    border: 2px solid red;
     cursor: pointer;
+} */
+
+/* solar services images */
+
+.imgsize300{
+    border: 1px solid #333;
+    height: 300px;
+    width: 300px;
+}
+
+.imgsize500{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
 }
