@@ -183,6 +183,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    display: none;
 }
 
 .header-carousel .owl-dots .owl-dot {

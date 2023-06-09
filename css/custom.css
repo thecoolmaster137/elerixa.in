@@ -20,8 +20,13 @@
   /* mainlogocss */
 
   .mainlogo{
-    border: 2px solid red;
     height: 100%;
     width: 100%;
-    background-image: ;
+    overflow: hidden;
+    /* background-image: ; */
+  }
+
+  .mainlogo img{
+    height: 100%;
+    width: 100%;
   }
