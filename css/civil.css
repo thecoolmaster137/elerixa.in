@@ -60,14 +60,20 @@
   }
 
   .image-placeholder {
-  width: 500px;
-  height: 300px;
+  /* width: 500px;
+  height: 300px; */
+  width: 50%;
+  height: 40%;
   background-color: #ccc;
   margin: 1em auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid #333; */
   border-radius: 15px;
-  
   }
+
+  img{
+    height: 100%;
+    width: 100%;
+  }
+
