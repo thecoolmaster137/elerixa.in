@@ -33,3 +33,53 @@
 
 
 
+  /* styling for the mission section */
+
+
+
+  
+  .missionvisionoutline {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .missionvisionoutline .missionvision, .companyvalues{
+    flex: 1;
+    margin: 2.5%;
+    padding: 1%;
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.5);
+  }
+  
+  section {
+    margin-bottom: 30px;
+    display: grid;
+    place-items: center;
+  }
+  
+  section h2 {
+    font-size: 24px;
+    margin: 10px 0px;
+  }
+  
+  section p {
+    font-size: 18px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+
+
