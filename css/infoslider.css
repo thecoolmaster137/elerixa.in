@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap");
+
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	text-transform: none !important;
+	font-family: "Roboto", sans-serif !important;
+}
+
+
+.feature {
+	
+	width: 90%;
+	margin: 50px auto;
+
+	&-card {
+		width: 50%;
+    margin: 0 auto;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    transition: all .3s;
+    margin-bottom: 20px;
+    
+    &:hover{
+      cursor: pointer;
+      box-shadow: -1px 1px 24px 7px rgba(0,0,0,.2);
+      transform: translateY(-5px) scale(1.05);
+    }
+
+		&__heading {
+			/* background: $linear-gradient-color; */
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			padding: 10px 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			h2 {
+				color: #fff;
+				font-weight: 400;
+			}
+		}
+
+		&__content {
+			max-height: 0;
+			overflow: hidden;
+			opacity: 0;
+			transition: opacity 1s, max-height 1s, padding 0s;
+
+			p {
+				padding: 20px 20px 15px 20px;
+				line-height: 24px;
+			}
+      
+      a{
+        margin: 10px 0 20px 20px;
+      }
+      
+		}
+	}
+
+}
+
+.checkbox {
+	display: none;
+}
+
+.label {
+	color: #fff;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.btn {
+	position: relative;
+	display: inline-block;
+	padding: 10px 0;
+	transition: all 0.5s;
+	text-decoration: none;
+	color: #000;
+
+	&::before,
+	&::after {
+		position: absolute;
+		left: 0;
+		content: "";
+		transform: scaleX(0);
+		height: 2px;
+		width: 100%;
+		background: #000;
+		transform-origin: center;
+		transition: all 0.5s;
+	}
+
+	&::before {
+		top: 0;
+	}
+
+	&::after {
+		bottom: 0;
+	}
+
+	&:hover {
+		letter-spacing: 1px;
+	}
+
+	&:hover::before,
+	&:hover::after {
+		transform: scaleX(1);
+	}
+}
+
+@for $i from 1 through 3 {
+	.feature__item--#{$i} {
+		box-shadow: -5px 0 6px rgba(0, 0, 0, 0.12);
+		margin-bottom: 2rem;
+	}
+
+	#checkbox--#{$i}:checked ~ .feature-card__content--#{$i} {
+		
+		max-height: 500px;
+		opacity: 1;
+		transition: max-height 2s;
+	}
+}
